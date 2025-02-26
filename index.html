@@ -69,6 +69,31 @@
             <h2>Fun Fact</h2>
             <p>I have pet rats</p>
         </section>
+
+	    <section>
+		<h2>I can be trusted with your location :)</h2>
+		<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+	    </section>
+	    
     </div>
 	Last Updated on 02/16/2025
 </body>
