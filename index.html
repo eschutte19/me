@@ -121,9 +121,21 @@ function showPosition(position) {
             <h2>Mass and Energy are equivalent!</h2>
           
             <form action="/action_page.php"
-oninput="x.value=parseInt(mass.value) * 89880000000000000">
+            oninput="x.value=parseInt(mass.value)">
                 <label for="mass">Enter a Mass:</label><br>
-                <input type="number" id="mass" name="mass"><br> kg = <output name="x" for="mass"></output> Joules
+                <input type="number" id="mass" name="mass"><br> 
+                <select id="mass" name="mass">
+                    <option value="kg">Kilogram</option>
+                    <option value="MeV/c^2">MeV/c^2</option>
+                    <option value="lbs">lbs</option>
+                    <option value="oz">oz</option>
+
+                    if  <option value="kg"></option> {
+                        y = (mass.value) * 89880000000000000
+                    } else if <option value="MeV/c^2"></option> {
+                        y = mass.value
+                    }
+                <output name="y" for="mass"></output>
                 <br><br>
             
               </form>
