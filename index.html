@@ -111,9 +111,10 @@ function showPosition(position) {
             <form>
                 <label for="mass">Mass(Kg):</label><br>
                 <input type="number" id="mass" name="mass"><br>
+                <button onclick="Convert()">Convert</button>
               </form>
               <script>
-               function Convert() {
+               function kg_to_J() {
     var mass = document.getElementById('mass').value;
     return mass * 89880000000000000;
      }
