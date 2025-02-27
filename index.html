@@ -109,11 +109,12 @@ function showPosition(position) {
         <section class="Function">
             <h2>Mass and Energy are equivalent!</h2>
           
-            <form>
+            <form action="/action_page.php"
+oninput="x.value=parseInt(mass.value) * 89880000000000000">
                 <label for="mass">Mass(Kg):</label><br>
                 <input type="number" id="mass" name="mass"><br>
                 <button onclick="Convert()">Convert</button>
-                <output name="x" for=" mass * 89880000000000000"></output>
+                <output name="x" for="mass"></output>
                 <br><br>
                 <input type="submit">
               </form>
