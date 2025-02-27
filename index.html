@@ -105,6 +105,25 @@ function showPosition(position) {
 }
 </script>
 	    </section>
+
+        <section class="Function">
+            <h2>Mass and Energy are equivalent!</h2>
+          
+            <form>
+                <label for="mass">Mass(Kg):</label><br>
+                <input type="number" id="mass" name="mass"><br>
+                <button onclick="Convert()">Convert</button>
+              </form>
+            
+              <p id="joule"></p>
+              <script>
+               function Convert() {
+    var mass = document.getElementById('mass').value;
+    return mass * 89880000000000000;
+     }
+     document.getElementById("joule").innerHTML = text;
+              </script>
+            </section>
        
        
     </div>
