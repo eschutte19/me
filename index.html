@@ -24,6 +24,10 @@
         .main-info h1 {
             margin: 0;
         }
+        .clickable-text {
+            cursor: pointer;
+            color: black;
+        }
         .hobbies, .lewis, .course, .job, .fun-fact , .location, .Function{
             background: #e7e7e7;
             padding: 15px;
@@ -39,7 +43,14 @@
     <div class="container">
         <header class="main-info">
         
-            <h1>Erik Schutte's Introduction Website</h1>
+            <h1 class="clickable-text" id="text">Erik Schutte's Introduction Website</h1>
+
+            <script>
+                document.getElementById('text').addEventListener('click', function() {
+                    this.style.color = 'purple';
+                });
+            </script>
+
             <p class="aligncenter">
                 <img src="me-300-by-300.jpg" alt="Me">
             </p>
