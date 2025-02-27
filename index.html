@@ -112,10 +112,13 @@ function showPosition(position) {
                 <label for="mass">Mass(Kg):</label><br>
                 <input type="text" id="mass" name="mass"><br>
               </form>
-              function myFunction(mass) {
-                return mass * 89880000000000000;
-              }
-              
+              <script>
+               function Convert() {
+    var mass = document.getElementById('mass').value;
+    var energy = mass * 89880000000000000;
+    alert(energy);
+  }
+              <script>
             <section>
     </div>
 	<p style="color:White;">Last Updated on 02/26/2025</p>
