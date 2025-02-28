@@ -169,7 +169,7 @@ function showPosition(position) {
           
 </h2> 
 				<input type="number"
-					id="massInput"
+					id="MassInput"
 					class="input"
 					placeholder="Enter value"> 
 				<select id="fromMassUnit"
@@ -202,9 +202,8 @@ function showPosition(position) {
 				</button> 
 				<div class="result"> 
 					<p id="EnergyResult"> 
-						
-
-
+						Result will be displayed here
+						</p>
 						<script src="./script.js">
 		let inputforms = 
 	document.querySelectorAll( 
@@ -231,7 +230,7 @@ document
 	.addEventListener("click", MassFn); 
 
 
-							function tempFn() { 
+							function MassFn() { 
 	let valInput = parseFloat( 
 		document.getElementById( 
 			"MassInput"
