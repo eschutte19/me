@@ -120,27 +120,110 @@ function showPosition(position) {
         <section class="Function">
             <h2>Mass and Energy are equivalent!</h2>
           
-            <form action="/action_page.php"
-            oninput="x.value=parseInt(mass.value)">
-                <label for="mass">Enter a Mass:</label><br>
-                <input type="number" id="mass" name="mass"><br> 
-                <select id="mass" name="mass">
-                    <option value="kg">Kilogram</option>
-                    <option value="MeV/c^2">MeV/c^2</option>
-                    <option value="lbs">lbs</option>
-                    <option value="oz">oz</option>
+</h2> 
+				<input type="number"
+					id="massInput"
+					class="input"
+					placeholder="Enter value"> 
+				<select id="fromMassUnit"
+						class="unit-select"> 
+					<option value="Kg"> 
+						Kilogram 
+					</option> 
+					<option value="MeV/c^2"> 
+						MeV/c^2 
+					</option> 
+					<option value="lbs"> 
+						Pound
+					</option> 
 
-                    if  <option value="kg"></option> {
-                        y = (mass.value) * 89880000000000000
-                    } else if <option value="MeV/c^2"></option> {
-                        y = mass.value
-                    }
-                <output name="y" for="mass"></output>
-                <br><br>
-            
-              </form>
-            
-            
+					
+				</select> 
+				<span class="arrow"></span> 
+				<select id="toEnergyUnit"
+						class="unit-select"> 
+					<option value="J"> 
+						Joule 
+					</option> 
+					<option value="MeV"> 
+						Mega ElectronVolt 
+					</option> 
+				</select> 
+				<button id="areaConvertBtn"
+						class="convert-button"> 
+					Convert 
+				</button> 
+				<div class="result"> 
+					<p id="areaResult"> 
+						Result will be 
+						displayed here 
+
+
+						<script src="./script.js">
+		let inputforms = 
+	document.querySelectorAll( 
+		".conversion"); 
+inputforms.forEach( 
+	(form) => 
+		(form.style.display = "none")); 
+let category = document.getElementById( 
+	"conversionCategory"); 
+category.addEventListener( 
+	"change", 
+	function () { 
+		let userInput = category.value; 
+		inputforms.forEach( 
+			(form) => 
+				(form.style.display = 
+					"none")); 
+		document.getElementById( 
+			userInput) 
+			.style.display = "block";}); 
+document 
+	.getElementById( 
+		"MassConvertBtn") 
+	.addEventListener("click", MassFn); 
+
+
+							function tempFn() { 
+	let valInput = parseFloat( 
+		document.getElementById( 
+			"MassInput"
+		).value); 
+	let fromUnit = 
+		document.getElementById( 
+			"fromMassUnit").value; 
+	let toUnit = 
+		document.getElementById( 
+			"toEnergyUnit").value; 
+	let result; 
+	if (fromUnit === "Kg" && 
+		toUnit === "J") { 
+		result = 
+			(valInput * 89875517878012800} 
+	else if (fromUnit === "J" && 
+			toUnit === "MeV") { 
+		result = valInput * 560958616722490000000000000000;} 
+	else if (fromUnit === "Mev/c^2" && 
+			toUnit === "J") { 
+		result = 
+			((valInput * 1.6 x 10^-13) / (3x10^8)^2;} 
+	else if (fromUnit === "Mev/c^2" && 
+			toUnit === "MeV") { 
+		result = 
+			((valInput;} 
+	else if (fromUnit === "lbs" && 
+			toUnit === "J") { 
+		result = valInput - 273.15;} 
+	else if (fromUnit === "lbs" && 
+			toUnit === "MeV") { 
+		result = 
+			((valInput - 273.15) * 9) / 
+				5 + 
+			32;} 
+	
+)}`;} 
+            </script>
             </section>
        
        
