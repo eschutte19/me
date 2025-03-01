@@ -164,7 +164,9 @@ function showPosition(position) {
 </script>
 	    </section>
 
-        <section class="Function">
+        
+		
+		<section class="Function">
             <h2>Mass and Energy are equivalent!</h2>
           
 </h2> 
@@ -183,9 +185,10 @@ function showPosition(position) {
 					<option value="lbs"> 
 						Pound
 					</option> 
-
-					
+			
 				</select> 
+			</input>
+
 				<span class="arrow"></span> 
 				<select id="toEnergyUnit"
 						class="unit-select"> 
@@ -204,6 +207,7 @@ function showPosition(position) {
 					<p id="EnergyResult"> 
 						
 						</p>
+					</div>
 						<script>
 		let inputforms = 
 	document.querySelectorAll( 
@@ -266,6 +270,7 @@ document
 			((valInput - 273.15) * 9) / 
 				5 + 
 			32;} 
+			
 		document.getElementById( 
 		"EnerygResult"
 	).textContent = `Result: ${result.toFixed( 
